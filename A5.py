@@ -5,13 +5,13 @@ import time
 
 ec2 = boto3.resource('ec2',
     region_name='us-east-2',
-    aws_access_key_id='AKIA4HZJGKUNY6FYG7CL',
-    aws_secret_access_key='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',
+    aws_access_key_id='',
+    aws_secret_access_key='',
 )
 
 # Creating a new key pair
 outfile = open('/Users/vishwapatel/Desktop/Cloud_Computing/vishwa.pem','w')
-key_pair = ec2.create_key_pair(KeyName ='vishwa')
+key_pair = ec2.create_key_pair(KeyName ='Name')
 KeyPairOut = str(key_pair.key_material)
 print(KeyPairOut)
 outfile.write(KeyPairOut)
