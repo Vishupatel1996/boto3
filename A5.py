@@ -1,3 +1,5 @@
+###create a VPC with one public subnet and one private subnet. Then create security groups for these two subnets and run instance in each subnet.
+
 import boto3
 import time
 
